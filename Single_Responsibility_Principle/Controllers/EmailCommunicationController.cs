@@ -9,7 +9,7 @@ namespace Single_Responsibility_Principle.Controllers
     [ApiController]
     public class EmailCommunicationController : ControllerBase
     {
-        //if you create object and accessing the methods
+        //if you create object and accessing the methods In mailservice class
         //we called this as tightly coupled between the classes.
         //===========
         // MailService obj=new MailService()
