@@ -29,6 +29,7 @@ namespace Single_Responsibility_Principle.Controllers
 
         }
         [HttpPost]
+        [Route("SendSMSToCustomers")]
         public async Task<IActionResult> SendSMSToCustomer(string to, string message)
         {     //send the REQUEST TO SERVICES.
             await _smsSender.SendSmsAsync(to, message);
